@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <h2>Results</h2>
+    <div class="results-container">
+        <div class="image-comparison">
+            <img src="static/images/org.jpg" alt="Original MRI" id="inimg">
+            <img src="static/images/results.jpg" alt="Segmented MRI" id="outimg">
+        </div>
+        <div class="results-details">
+            <p>Tumor Size: {{size}} cm</p>
+            
+            <p>Tumor Type: {{type}}</p>
+            <button class="download-button">Download Results</button>
+            <button class="feedback-button">Provide Feedback</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
